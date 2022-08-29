@@ -7,7 +7,6 @@
 
 		<style type="text/css">
 		body {
-			width: 100vw;
 			margin: 0;
 			text-align: center;
 		}
@@ -16,17 +15,21 @@
 			margin-bottom: 10px;
 		}
 		#section-container {
-			display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-around; row-gap: 10px;
-			overflow: scroll;
-			width: 100%
+			display: flex; 
+			flex-wrap: wrap; 
+			align-items: stretch; 
+			justify-content: center; 
+			row-gap: 10px;
+			overflow: auto;
+			width: 100%;
 		}
 		.section {
-			margin: 0.5em;
+			margin: 10px;
 			padding: 0px 0.5em 0.5em;
 			background-color: #EBEBEB;
-			min-width: 340px;
+			min-width: 360px;
 			max-width: min(50vw, 100%);
-			overflow-x: scroll;
+			overflow-x: auto;
 		}
 		.section-subtitle {
 			margin-bottom: 4px;
@@ -312,13 +315,13 @@
 					<tr>
 						<td colspan="3">
 							<small>
-								When positioning a workplane relative to an existing feature you can use:
+								Position a workplane relative to an existing feature with:
 								<br>
 								<a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html?highlight=workplane#cadquery.Workplane.workplane">.workplane</a>(offset, origin)
 								<br>
-								to set the <code>offset</code> perpendicular to the current plane
+								sets the <code>offset</code> perpendicular to the current plane
 								<br>
-								and the <code>origin</code> relative to (0,0) on the current plane.
+								sets the <code>origin</code> relative to (0,0) on the current plane
 							</small>
 						</td>
 					</tr>
