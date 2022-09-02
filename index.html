@@ -283,8 +283,8 @@
 				<div class="section-subtitle">Axis Strings are: X, Y, Z, XY, YZ, XZ</div>
 				<table>
 					<tr>
-						<th style="width:10%;">Modifier</th>
-						<th style="width:90%;">Description</th>
+						<th style="width:15%;">Mod</th>
+						<th style="width:85%;">Description</th>
 					</tr>
 					<tr>
 						<td>&#124;</td>
@@ -310,10 +310,17 @@
 						<td>&#37;</td>
 						<td>Curve/surface type = <a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#cadquery.TypeSelector">TypeSelector</a></td>
 					</tr>
+					<tr>
+						<td colspan="2">
+							Eg: select the top face (> in Z direction) = 
+							<code>.faces(">Z")</code>
+						</td>
+					</tr>
 				</table>
+				
 			</div>
 			<div class="section">
-				<h2>Selector Methods</h2><br />
+				<h2><a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#selector-classes">Selector Methods</a></h2><br />
 				<div class="section-subtitle">CadQuery selector strings and classes allow filtering to select objects.</div>
 				<table>
 					<tr>
@@ -330,7 +337,7 @@
 					</tr>
 					<tr>
 						<td><a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#cadquery.Workplane.vertices">vertices</a>(selector)</td>
-						<td><a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#cadquery.selectors.DirectionSelector">DirectionSelector</a>(vector)</td>
+						<td><a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#cadquery.selectors.PerpendicularDirSelector">PerpendicularDirSelector</a>(vector)</td>
 					</tr>
 					<tr>
 						<td><a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#cadquery.Workplane.solids">solids</a>(selector)</td>
@@ -338,7 +345,23 @@
 					</tr>
 					<tr>
 						<td><a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#cadquery.Workplane.shells">shells</a>(selector)</td>
-						<td><a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#cadquery.selectors.TypeSelector">TypeSelector</a>(typeString)</td>
+						<td><a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#cadquery.selectors.RadiusNthSelector">RadiusNthSelector</a>(n)</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#cadquery.selectors.AndSelector">AndSelector</a>(selector, selector)</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#cadquery.selectors.SumSelector">SumSelector</a>(selector, selector)</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#cadquery.selectors.SubtractSelector">SubtractSelector</a>(selector, selector)</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a target="_blank" href="https://cadquery.readthedocs.io/en/latest/classreference.html#cadquery.selectors.InverseSelector">InverseSelector</a>(selector)</td>
 					</tr>
 				</table>
 			</div>
